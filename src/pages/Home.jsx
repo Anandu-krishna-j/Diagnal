@@ -74,7 +74,7 @@ const loadMore = useCallback(() => {
         </div>
 
         <div className="mt-[12px] pb-[10px] px-[12px] sm:px-[16px]">
-          {filtered.length === 0 ? (
+          {(filtered.length === 0 && search !=="") ? (
             
             <div className="flex flex-col items-center justify-center min-h-[60vh] text-center px-[16px]">
               <svg
