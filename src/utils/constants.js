@@ -1,0 +1,1 @@
+export const BASE_IMG = "https://test.create.diagnal.com/images/";
