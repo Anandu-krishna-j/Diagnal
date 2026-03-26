@@ -5,8 +5,7 @@ const uiSlice = createSlice({
     initialState: {
         search: "",
         page: 1,
-        hasMore: true,
-        totalItems: 0,
+        hasMore: true
     },
     reducers: {
         setSearch: (state, action) => {
@@ -19,17 +18,9 @@ const uiSlice = createSlice({
         },
         stopLoading: (state) => {
             state.hasMore = false;
-        },
-        resetPagination: (state) => {
-            state.page = 1;
-            state.hasMore = true;
-            state.totalItems = 0;
-        },
-        setTotalItems: (state, action) => {
-            state.totalItems = action.payload;
-        },
+        }
     },
 });
 
-export const { setSearch, nextPage, stopLoading, resetPagination, setTotalItems } = uiSlice.actions;
+export const { setSearch, nextPage, stopLoading } = uiSlice.actions;
 export default uiSlice.reducer;

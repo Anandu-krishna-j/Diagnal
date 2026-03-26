@@ -1,4 +1,3 @@
-// src/app/store.js
 import { configureStore } from "@reduxjs/toolkit";
 import { contentApi } from "../services/contentApi";
 import uiReducer from "../features/uiSlice";
